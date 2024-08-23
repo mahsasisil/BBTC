@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -7,6 +8,7 @@ body {
     line-height: 1.6;
 }
 
+/* Hero Section */
 .hero {
     background: url('1.jpg') no-repeat center center/cover;
     width: 100%;
@@ -20,6 +22,7 @@ body {
     position: relative;
 }
 
+/* Banner Section */
 .banner {
     width: 100%;
     display: flex;
@@ -54,6 +57,7 @@ body {
     font-size: 18px;
 }
 
+/* Hero Section Text */
 .hero h1 {
     font-size: 50px;
     margin-bottom: 20px;
@@ -67,52 +71,59 @@ body {
     color: white; /* Set hero paragraph text to white */
 }
 
+/* Section Styles */
 .section {
-    padding: 0;
+    padding: 100px 20px;
     width: 100%;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0;
     background-color: black;
 }
 
+/* Text within Sections */
 .section h2 {
-    margin: 20px 0;
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: white; /* Set section headers to white */
+    margin: 20px 0; /* Adds 20px margin above and below the heading */
+    color: white;
 }
 
 .section p {
-    margin: 15px 0;
-    font-size: 18px;
-    line-height: 1.8;
-    color: white; /* Set section paragraphs to white */
+    margin: 15px 0; /* Adds 15px margin above and below each paragraph */
+    color: white;
 }
 
+/* Optional Content Container with Padding */
+.section .content {
+    padding: 20px; /* Adds padding inside the content block */
+    margin: 0 auto; /* Centers the content block within the section */
+    max-width: 800px; /* Limits the width of the content block */
+}
+
+/* Specific Sections Backgrounds */
 #home {
     background-color: black; /* Set Home section background to black */
 }
 
 #services {
-    background-color: black; /* Set Services section background to black */
+    background-color: #333; /* Slightly different shade */
 }
 
 #projects {
-    background-color: black; /* Set Projects section background to black */
+    background-image: url('project-bg.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
 }
 
 #team {
-    background-color: black; /* Set Team section background to black */
+    background-color: #444; /* Another shade of gray */
 }
 
 #careers {
-    background-color: black; /* Set Careers section background to black */
+    background-color: #555; /* Another shade */
 }
 
 #about {
-    background-color: black; /* Set About section background to black */
+    background-color: #666; /* Another shade */
 }
 
 #contact {
-    background-color: white; /* Set Contact section background to black */
+    background-color: #777; /* Another shade */
 }
