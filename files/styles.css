@@ -69,24 +69,21 @@ body {
     font-size: 20px;
     max-width: 600px;
     color: white; /* Set hero paragraph text to white */
+    margin-top: 20px; /* Add margin on top of paragraph */
 }
 
 /* Section Styles */
 .section {
-    padding: 100px 20px;
+    padding: 100px 20px; /* Ensure padding inside the section */
     width: 100%;
     margin: 0;
     background-color: black;
 }
 
-/* Text within Sections */
-.section h2 {
-    margin: 20px 0; /* Adds 20px margin above and below the heading */
-    color: white;
-}
-
-.section p {
-    margin: 15px 0; /* Adds 15px margin above and below each paragraph */
+/* Text within Sections with Left and Right Margins */
+.section h2, .section p {
+    margin: 0 40px; /* Adds 40px margin on the left and right */
+    padding: 10px 0; /* Optional padding inside text elements */
     color: white;
 }
 
