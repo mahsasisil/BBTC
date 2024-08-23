@@ -31,7 +31,7 @@ body {
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
     background: rgba(0, 0, 0, 0); /* Fully transparent background */
-    position: absolute;
+    position: fixed
     top: 50px;
     left: 0;
     z-index: 1000;
