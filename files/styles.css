@@ -37,7 +37,7 @@ body {
     z-index: 1000;
 }
 .banner.scrolled {
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
 }
 .banner .logo {
     padding: 30px 5px 5px 5px; 
