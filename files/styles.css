@@ -22,7 +22,7 @@ body {
 .banner {
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start; /* Align items to the left initially */
     align-items: center;
     padding: 15px 20px;
     background: transparent; /* Fully transparent background for the banner */
@@ -36,16 +36,18 @@ body {
     font-size: 24px;
     font-weight: bold;
     color: white;
-    margin-right: 30px; /* Space between logo and navigation items */
+    margin-right: 20px; /* Reduce space between logo and navigation */
 }
 
 .banner nav {
     display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Allow navigation to take only the required space */
 }
 
 .banner nav a {
     color: white;
-    margin: 0 15px;
+    margin: 0 10px; /* Reduce margin between navigation items */
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
@@ -67,6 +69,7 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 50px; /* Add margin to separate sections */
 }
 
 .section h2 {
@@ -78,4 +81,11 @@ body {
 .section p {
     font-size: 18px;
     line-height: 1.8;
+}
+
+/* Add a minimum height to ensure visibility */
+#contact {
+    min-height: 300px;
+    background-color: #7f8c8d;
+    padding: 20px;
 }
