@@ -21,7 +21,7 @@ body {
     color: white; /* Ensure text color is white */
     text-align: center;
     position: relative;
-    padding: 20px; /* Add padding inside the hero section */
+  
     box-sizing: border-box;
 }
 
