@@ -31,8 +31,8 @@ body {
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
-    padding: 15px 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+ 
+    background: rgba(0, 0, 0, 0); /* Semi-transparent black background */
     position: absolute;
     top: 0;
     left: 0;
