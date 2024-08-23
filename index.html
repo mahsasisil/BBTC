@@ -29,7 +29,7 @@
         .banner {
             width: 100%;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start; /* Align items to the left */
             align-items: center;
             padding: 15px 20px;
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
@@ -43,11 +43,18 @@
             font-size: 24px;
             font-weight: bold;
             color: white;
+            margin-right: 20px; /* Space between logo and navigation */
+        }
+
+        .banner nav {
+            display: flex;
+            justify-content: center; /* Center the navigation items */
+            flex-grow: 1; /* Allow navigation to take up only the necessary space */
         }
 
         .banner nav a {
             color: white;
-            margin: 0 15px;
+            margin: 0 10px; /* Reduce margin between navigation items */
             text-decoration: none;
             font-weight: bold;
             font-size: 18px;
