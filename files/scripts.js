@@ -10,20 +10,20 @@ window.addEventListener('scroll', function() {
     }
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
     fetch('content.json')
         .then(response => response.json())
         .then(data => {
             // Load Services Section
-            const servicesSection = document.getElementById('services');
-            if (servicesSection) {
-                const servicesContent = data.services.map(service => `
-                    <h3>${service.title}</h3>
-                    <p>${service.description}</p>
+            const servicesContent = document.querySelector('.services-content');
+            if (servicesContent) {
+                const servicesHtml = data.services.map(service => `
+                    <div class="service-item">
+                        <h3>${service.title}</h3>
+                        <p>${service.description}</p>
+                    </div>
                 `).join('');
-                servicesSection.innerHTML += servicesContent;
+                servicesContent.innerHTML = servicesHtml;
             }
 
             // Load Projects Section
