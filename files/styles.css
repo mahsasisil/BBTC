@@ -32,7 +32,7 @@ body {
     align-items: center;
     background: rgba(0, 0, 0, 0); /* Fully transparent background */
     position: fixed;
-    top: 50px;
+    top: 0;
     left: 0;
     z-index: 1000;
 }
@@ -47,6 +47,7 @@ body {
 }
 
 .banner nav {
+    padding: 50px 20px 20px 20px; 
     display: flex;
     justify-content: center; /* Center the navigation items */
     flex-grow: 1; /* Allow navigation to take up only the necessary space */
