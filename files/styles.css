@@ -333,7 +333,7 @@ body {
 
 /* About Us Section with Background Image */
 .about-section {
-    background: url('files/6.jpg') no-repeat center center/cover; /* Background image */
+    background: url('6.jpg') no-repeat center center/cover; /* Background image */
     color: white; /* Ensure text is readable against the background */
     padding: 60px 20px; /* Add padding to create space around the text */
 }
