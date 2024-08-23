@@ -30,6 +30,15 @@ body {
     margin: 0 auto; /* Center horizontally */
     color: white;
 }
+
+.hero-content h1, .hero-content p {
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+}
+
+
+
 /* Banner Section */
 .banner {
     width: 100%;
