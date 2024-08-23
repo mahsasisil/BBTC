@@ -427,5 +427,76 @@ body {
 .submit-button:hover {
     background-color: #004080;
 }
+/* Careers Section Styles */
+.careers-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.careers-intro {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+.careers-positions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+}
+
+.career-item {
+    display: flex;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.career-image img {
+    max-width: 150px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.career-details {
+    flex: 1;
+}
+
+.career-item h3 {
+    margin-top: 0;
+    color: #001f3f;
+}
+
+.career-item p, .career-item ul {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.career-item ul {
+    padding-left: 20px;
+}
+
+.career-item ul li {
+    list-style-type: disc;
+    margin-bottom: 5px;
+}
+
+.apply-button {
+    display: inline-block;
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: #004080;
+}
 
 
