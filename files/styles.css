@@ -48,7 +48,7 @@ body {
 }
 
 .banner nav {
-    padding: 50px 20px 20px 20px; 
+    padding: 30px 20px 20px 20px; 
     display: flex;
     justify-content: center; /* Center the navigation items */
     flex-grow: 1; /* Allow navigation to take up only the necessary space */
