@@ -146,6 +146,26 @@ body {
     margin: 0;
 }
 
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.services-table td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.services-image {
+    width: 50%;
+}
+
+.services-content {
+    width: 50%;
+}
+
+
 /* Specific Sections Backgrounds */
 #home {
     background-color: black;
