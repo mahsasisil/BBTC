@@ -23,7 +23,13 @@ body {
     position: relative;
     box-sizing: border-box;
 }
-
+.hero-content {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+    color: white;
+}
 /* Banner Section */
 .banner {
     width: 100%;
@@ -37,13 +43,7 @@ body {
     z-index: 1000;
 }
 
-.hero-content {
-    padding: 20px;
-    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
-    border-radius: 10px;
-    margin: 0 auto; /* Center horizontally */
-    color: white;
-}
+
 
 .banner.scrolled {
     background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
