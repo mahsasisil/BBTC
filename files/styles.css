@@ -36,6 +36,12 @@ body {
     left: 0;
     z-index: 1000;
 }
+.hero-content {
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    border-radius: 10px;
+}
 .banner.scrolled {
     background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 }
