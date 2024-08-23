@@ -1,113 +1,112 @@
- <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-            line-height: 1.6;
-        }
 
-        .hero {
-            background: url('files/1.jpg') no-repeat center center/cover;
-            width: 100%;
-            height: 600px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-            position: relative;
-        }
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .banner {
-            width: 100%;
-            display: flex;
-            justify-content: flex-start; /* Align items to the left */
-            align-items: center;
-            padding: 15px 20px;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
+.hero {
+    background: url('files/1.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
 
-        .banner .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: white;
-            margin-left: 50px; /* Move logo to the right */
-        }
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+    align-items: center;
+    padding: 15px 20px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
 
-        .banner nav {
-            display: flex;
-            justify-content: center; /* Center the navigation items */
-            flex-grow: 1; /* Allow navigation to take up only the necessary space */
-        }
+.banner .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-left: 50px; /* Move logo to the right */
+}
 
-        .banner nav a {
-            color: white;
-            margin: 0 10px; /* Reduce margin between navigation items */
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 18px;
-        }
+.banner nav {
+    display: flex;
+    justify-content: center; /* Center the navigation items */
+    flex-grow: 1; /* Allow navigation to take up only the necessary space */
+}
 
-        .hero h1 {
-            font-size: 50px;
-            margin-bottom: 20px;
-            margin-top: 80px; /* Space for the banner */
-        }
+.banner nav a {
+    color: white;
+    margin: 0 10px; /* Reduce margin between navigation items */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
 
-        .hero p {
-            font-size: 20px;
-            max-width: 600px;
-        }
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    margin-top: 80px; /* Space for the banner */
+}
 
-        .section {
-            padding: 100px 20px;
-            max-width: 1200px;
-            margin-left: auto;
-            margin-right: auto;
-        }
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+}
 
-        #home {
-            background-color: #ecf0f1;
-        }
+.section {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-        #services {
-            background-color: #bdc3c7;
-        }
+#home {
+    background-color: #ecf0f1;
+}
 
-        #projects {
-            background-color: #95a5a6;
-        }
+#services {
+    background-color: #bdc3c7;
+}
 
-        #team {
-            background-color: #ecf0f1;
-        }
+#projects {
+    background-color: #95a5a6;
+}
 
-        #careers {
-            background-color: #bdc3c7;
-        }
+#team {
+    background-color: #ecf0f1;
+}
 
-        #about {
-            background-color: #95a5a6;
-        }
+#careers {
+    background-color: #bdc3c7;
+}
 
-        #contact {
-            background-color: #7f8c8d;
-        }
+#about {
+    background-color: #95a5a6;
+}
 
-        .section h2 {
-            font-size: 36px;
-            margin-bottom: 20px;
-            color: #2c3e50;
-        }
+#contact {
+    background-color: #7f8c8d;
+}
 
-        .section p {
-            font-size: 18px;
-            line-height: 1.8;
-        }
-    </style>
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.8;
+}
