@@ -3,127 +3,111 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: white; /* Set text color to white */
-    background-color: black; /* Set body background to black */
+    color: white;
+    background-color: black;
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden;
 }
 
 /* Hero Section */
 .hero {
     background: url('1.jpg') no-repeat center center/cover;
     width: 100%;
-    height: 100vh; /* Full viewport height */
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white; /* Ensure text color is white */
+    color: white;
     text-align: center;
     position: relative;
     box-sizing: border-box;
 }
+
 .hero-content {
     padding: 20px;
-    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0);
     border-radius: 10px;
-    margin: 0 auto; /* Center horizontally */
+    margin: 0 auto;
     color: white;
 }
 
 .hero-content h1 {
     margin: 0;
     padding: 10px 0;
+    font-size: 4vw;
     color: white;
 }
 
-
+.hero-content h2 {
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 0;
+    color: white;
+}
 
 /* Banner Section */
 .banner {
     width: 100%;
     display: flex;
-    justify-content: flex-start; /* Align items to the left */
+    justify-content: flex-start;
     align-items: center;
-    background: rgba(0, 0, 0, 0); /* Fully transparent background */
+    background: rgba(0, 0, 0, 0);
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
+    transition: background 0.3s ease;
 }
-
-
 
 .banner.scrolled {
-    background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.8);
 }
+
 .banner .logo {
-    padding: 30px 5px 5px 5px; 
+    padding: 30px 5px 5px 5px;
     font-size: 24px;
     font-weight: bold;
-    color: white; /* Set logo text color to white */
-    margin-left: 50px; /* Move logo to the right */
+    color: white;
+    margin-left: 50px;
 }
 
 .banner nav {
-    padding: 30px 20px 20px 20px; 
+    padding: 30px 20px 20px 20px;
     display: flex;
-    justify-content: center; /* Center the navigation items */
-    flex-grow: 1; /* Allow navigation to take up only the necessary space */
+    justify-content: center;
+    flex-grow: 1;
 }
 
 .banner nav a {
-    color: white; /* Set navigation link color to white */
-    margin: 0 10px; /* Reduce margin between navigation items */
+    color: white;
+    margin: 0 10px;
     text-decoration: none;
     font-weight: bold;
     font-size: 18px;
 }
 
-/* Hero Section Text */
-.hero h1 {
-    font-size: 4vw; /* Responsive font size */
-    margin: 0; /* Remove margins to avoid overflow */
-    color: white; /* Set hero header text to white */
-}
-
-.hero p {
-    font-size: 2vw; /* Responsive font size */
-    max-width: 80%; /* Responsive max width */
-    color: white; /* Set hero paragraph text to white */
-    margin-top: 20px; /* Add margin on top of paragraph */
-    margin-bottom: 0; /* Remove bottom margin */
-}
-
-
-
-
 /* Section Styles */
 .section {
-    padding: 5vh 20px; /* Adjusted padding to fit content within viewport */
+    padding: 5vh 20px;
     width: 100%;
-    height: auto; /* Allow section to adjust based on content */
+    height: auto;
     margin: 0;
     background-color: black;
     box-sizing: border-box;
 }
 
-/* Text within Sections with Left and Right Margins */
 .section h2, .section p {
-    margin: 0 auto; /* Adds 40px margin on the left and right */
-    padding: 0px 0; /* Optional padding inside text elements */
+    margin: 0 auto;
+    padding: 0px 0;
     color: white;
 }
 
-/* Optional Content Container with Padding */
 .section .content {
-    padding: 20px; /* Adds padding inside the content block */
-    margin: 0 auto; /* Centers the content block within the section */
-    max-width: 800px; /* Limits the width of the content block */
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
-
-
 
 /* Services Container Layout */
 .services-container {
@@ -147,11 +131,11 @@ body {
 
 /* Services Content on the Right */
 .services-content {
-    flex: 2; /* Adjust the flex value to control the width */
+    flex: 2;
 }
 
 .service-item {
-    margin-bottom: 20px; /* Space between service items */
+    margin-bottom: 20px;
 }
 
 .service-item h3 {
@@ -162,40 +146,51 @@ body {
     margin: 0;
 }
 
-
 /* Specific Sections Backgrounds */
 #home {
-    background-color: black; /* Set Home section background to black */
+    background-color: black;
 }
 
 #services {
-    background-color: #333; /* Slightly different shade */
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    background-color: #333;
+    padding: 10vh 20px;
 }
 
 #projects {
-    background-image: url('project-bg.jpg'); /* Background image */
+    background-image: url('project-bg.jpg');
     background-size: cover;
     background-position: center;
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    padding: 10vh 20px;
 }
 
 #team {
-    background-color: #444; /* Another shade of gray */
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    background-color: #444;
+    padding: 10vh 20px;
 }
 
 #careers {
-    background-color: #555; /* Another shade */
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    background-color: #555;
+    padding: 10vh 20px;
 }
 
 #about {
-    background-color: #666; /* Another shade */
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    background-color: #666;
+    padding: 10vh 20px;
 }
 
 #contact {
-    background-color: #777; /* Another shade */
-    padding: 10vh 20px; /* Adjusted padding to fit within viewport */
+    background-color: #777;
+    padding: 10vh 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .services-container {
+        flex-direction: column;
+    }
+
+    .services-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
 }
