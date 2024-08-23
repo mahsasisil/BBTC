@@ -95,6 +95,9 @@ body {
     margin-bottom: 0; /* Remove bottom margin */
 }
 
+
+
+
 /* Section Styles */
 .section {
     padding: 5vh 20px; /* Adjusted padding to fit content within viewport */
@@ -118,6 +121,47 @@ body {
     margin: 0 auto; /* Centers the content block within the section */
     max-width: 800px; /* Limits the width of the content block */
 }
+
+
+
+
+/* Services Container Layout */
+.services-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Large Image on the Left */
+.services-image {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.large-service-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Services Content on the Right */
+.services-content {
+    flex: 2; /* Adjust the flex value to control the width */
+}
+
+.service-item {
+    margin-bottom: 20px; /* Space between service items */
+}
+
+.service-item h3 {
+    margin-top: 0;
+}
+
+.service-item p {
+    margin: 0;
+}
+
 
 /* Specific Sections Backgrounds */
 #home {
