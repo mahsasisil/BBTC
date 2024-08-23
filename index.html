@@ -13,29 +13,36 @@
             line-height: 1.6;
         }
 
-        .banner {
-            background-color: #2c3e50;
-            color: white;
-            padding: 15px 0;
-            position: fixed;
+        .hero {
+            background: url('files/1.jpg') no-repeat center center/cover;
             width: 100%;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            position: relative;
         }
 
-        .banner .container {
-            max-width: 1200px;
-            margin: auto;
+        .banner {
+            width: 100%;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0 20px;
+            padding: 15px 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
 
         .banner .logo {
             font-size: 24px;
             font-weight: bold;
+            color: white;
         }
 
         .banner nav a {
@@ -46,20 +53,10 @@
             font-size: 18px;
         }
 
-        .hero {
-            background: url('files/1.jpg') no-repeat center center/cover;
-            width: 100%;
-            height: 600px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
-
         .hero h1 {
             font-size: 50px;
             margin-bottom: 20px;
+            margin-top: 80px; /* Space for the banner */
         }
 
         .hero p {
@@ -69,7 +66,6 @@
 
         .section {
             padding: 100px 20px;
-            margin-top: 50px;
             max-width: 1200px;
             margin-left: auto;
             margin-right: auto;
@@ -119,17 +115,36 @@
             fetch('files/content.json')
                 .then(response => response.json())
                 .then(data => {
-                    console.log(data); // Debugging line to see the fetched data
+                    // Load Services Section
                     const servicesSection = document.getElementById('services');
-                    data.services.forEach(service => {
-                        const serviceTitle = document.createElement('h3');
-                        serviceTitle.textContent = service.title;
-                        servicesSection.appendChild(serviceTitle);
+                    if (servicesSection) {
+                        const servicesContent = data.services.map(service => `
+                            <h3>${service.title}</h3>
+                            <p>${service.description}</p>
+                        `).join('');
+                        servicesSection.innerHTML += servicesContent;
+                    }
 
-                        const serviceDescription = document.createElement('p');
-                        serviceDescription.textContent = service.description;
-                        servicesSection.appendChild(serviceDescription);
-                    });
+                    // Load Projects Section
+                    const projectsSection = document.getElementById('projects');
+                    if (projectsSection) {
+                        projectsSection.querySelector('h2').textContent = data.projects[0].title;
+                        projectsSection.querySelector('p').innerHTML = data.projects[0].description;
+                    }
+
+                    // Load Careers Section
+                    const careersSection = document.getElementById('careers');
+                    if (careersSection) {
+                        careersSection.querySelector('h2').textContent = data.careers.title;
+                        careersSection.querySelector('p').innerHTML = data.careers.description;
+                    }
+
+                    // Load About Section
+                    const aboutSection = document.getElementById('about');
+                    if (aboutSection) {
+                        aboutSection.querySelector('h2').textContent = data.about.title;
+                        aboutSection.querySelector('p').innerHTML = data.about.description;
+                    }
                 })
                 .catch(error => console.error('Error loading content:', error));
         });
@@ -137,24 +152,20 @@
 </head>
 <body>
 
-    <!-- Banner -->
-    <div class="banner">
-        <div class="container">
-            <div class="logo">BBTC</div>
+    <!-- Hero Section with Navigation, Logo, and Welcome Message on Top of the Image -->
+    <div class="hero" id="home">
+        <!-- Banner with Navigation and Logo -->
+        <div class="banner">
+            <div class="logo">Bright Bee Technology Center</div>
             <nav>
                 <a href="#home">Home</a>
                 <a href="#services">Services</a>
                 <a href="#projects">Projects</a>
-                <a href="#team">Our Team</a>
                 <a href="#careers">Careers</a>
                 <a href="#about">About Us</a>
                 <a href="#contact">Contact Us</a>
             </nav>
         </div>
-    </div>
-
-    <!-- Hero Section with 1920x1280 Image -->
-    <div class="hero" id="home">
         <div>
             <h1>Welcome to Bright Bee Technology Center</h1>
             <p>Providing the best services with high-quality standards.</p>
@@ -167,27 +178,25 @@
         <!-- Content will be loaded here by JavaScript -->
     </div>
 
-    <!-- Other Sections (Projects, Our Team, etc.) -->
+    <!-- Projects Section -->
     <div id="projects" class="section">
         <h2>Projects</h2>
-        <p>This is the content of the Projects section.</p>
+        <p></p>
     </div>
 
-    <div id="team" class="section">
-        <h2>Our Team</h2>
-        <p>This is the content of the Our Team section.</p>
-    </div>
-
+    <!-- Careers Section -->
     <div id="careers" class="section">
         <h2>Careers</h2>
-        <p>This is the content of the Careers section.</p>
+        <p></p>
     </div>
 
+    <!-- About Us Section -->
     <div id="about" class="section">
         <h2>About Us</h2>
-        <p>This is the content of the About Us section.</p>
+        <p></p>
     </div>
 
+    <!-- Contact Us Section -->
     <div id="contact" class="section">
         <h2>Contact Us</h2>
         <p>This is the content of the Contact Us section.</p>
