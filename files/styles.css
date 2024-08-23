@@ -362,4 +362,70 @@ body {
     list-style-type: disc;
     margin-bottom: 10px;
 }
+/* Contact Us Section with Background Image */
+.contact-section {
+    background: url('files/6.jpg') no-repeat center center/cover; /* Background image */
+    color: white; /* Ensure text is readable against the background */
+    padding: 60px 20px; /* Add padding to create space around the text */
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for better text readability */
+    padding: 20px;
+    border-radius: 10px; /* Add rounded corners to the content area */
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-form h3 {
+    margin-top: 0;
+    color: #ffcc00; /* Highlight the form title */
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4f4f4;
+    color: black;
+    font-size: 16px;
+}
+
+.submit-button {
+    background-color: #001f3f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #004080;
+}
+
 
