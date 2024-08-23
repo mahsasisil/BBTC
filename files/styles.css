@@ -36,12 +36,16 @@ body {
     left: 0;
     z-index: 1000;
 }
+
 .hero-content {
     max-width: 800px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0); /* Semi-transparent background */
     border-radius: 10px;
+    margin: 0 auto; /* Center horizontally */
+    color: white;
 }
+
 .banner.scrolled {
     background: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
 }
