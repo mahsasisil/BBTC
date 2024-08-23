@@ -1,9 +1,9 @@
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: white; /* Set text color to white */
+    background-color: black; /* Set body background to black */
     line-height: 1.6;
 }
 
@@ -15,7 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: white;
+    color: white; /* Ensure text color is white */
     text-align: center;
     position: relative;
 }
@@ -26,7 +26,7 @@ body {
     justify-content: flex-start; /* Align items to the left */
     align-items: center;
     padding: 15px 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
     position: absolute;
     top: 0;
     left: 0;
@@ -36,7 +36,7 @@ body {
 .banner .logo {
     font-size: 24px;
     font-weight: bold;
-    color: white;
+    color: white; /* Set logo text color to white */
     margin-left: 50px; /* Move logo to the right */
 }
 
@@ -47,7 +47,7 @@ body {
 }
 
 .banner nav a {
-    color: white;
+    color: white; /* Set navigation link color to white */
     margin: 0 10px; /* Reduce margin between navigation items */
     text-decoration: none;
     font-weight: bold;
@@ -58,11 +58,13 @@ body {
     font-size: 50px;
     margin-bottom: 20px;
     margin-top: 80px; /* Space for the banner */
+    color: white; /* Set hero header text to white */
 }
 
 .hero p {
     font-size: 20px;
     max-width: 600px;
+    color: white; /* Set hero paragraph text to white */
 }
 
 .section {
@@ -70,44 +72,45 @@ body {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-}
-
-#home {
-    background-color: #ecf0f1;
-}
-
-#services {
-     width: 100%;
-    background-color: black;
-}
-
-#projects {
-    background-color: #95a5a6;
-}
-
-#team {
-    background-color: #ecf0f1;
-}
-
-#careers {
-    background-color: #bdc3c7;
-}
-
-#about {
-    background-color: #95a5a6;
-}
-
-#contact {
-    background-color: #7f8c8d;
+    background-color: black; /* Set section background to black */
 }
 
 .section h2 {
     font-size: 36px;
     margin-bottom: 20px;
-    color: #2c3e50;
+    color: white; /* Set section headers to white */
 }
 
 .section p {
     font-size: 18px;
     line-height: 1.8;
+    color: white; /* Set section paragraphs to white */
+}
+
+#home {
+    background-color: black; /* Set Home section background to black */
+}
+
+#services {
+    background-color: black; /* Set Services section background to black */
+}
+
+#projects {
+    background-color: black; /* Set Projects section background to black */
+}
+
+#team {
+    background-color: black; /* Set Team section background to black */
+}
+
+#careers {
+    background-color: black; /* Set Careers section background to black */
+}
+
+#about {
+    background-color: black; /* Set About section background to black */
+}
+
+#contact {
+    background-color: black; /* Set Contact section background to black */
 }
