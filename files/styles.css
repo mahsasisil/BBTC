@@ -107,8 +107,8 @@ body {
 
 /* Text within Sections with Left and Right Margins */
 .section h2, .section p {
-    margin: 0 40px; /* Adds 40px margin on the left and right */
-    padding: 10px 0; /* Optional padding inside text elements */
+    margin: 0 auto; /* Adds 40px margin on the left and right */
+    padding: 0px 0; /* Optional padding inside text elements */
     color: white;
 }
 
