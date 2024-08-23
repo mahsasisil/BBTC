@@ -76,12 +76,14 @@ body {
 }
 
 .section h2 {
+    margin: 20px 0;
     font-size: 36px;
     margin-bottom: 20px;
     color: white; /* Set section headers to white */
 }
 
 .section p {
+    margin: 15px 0;
     font-size: 18px;
     line-height: 1.8;
     color: white; /* Set section paragraphs to white */
