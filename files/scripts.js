@@ -1,3 +1,16 @@
+// JavaScript to change banner background on scroll
+window.addEventListener('scroll', function() {
+    const banner = document.querySelector('.banner');
+    
+    // Check if the page is scrolled more than 50px from the top
+    if (window.scrollY > 50) {
+        banner.classList.add('scrolled');
+    } else {
+        banner.classList.remove('scrolled');
+    }
+});
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
     fetch('content.json')
