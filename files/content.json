@@ -1,5 +1,10 @@
 {
-    
+        "services": [
+        {
+            "title": "Projects",
+            "description": "Here you can describe the key projects undertaken by Bright Bee Technology Center, highlighting your innovative solutions and successful outcomes for clients."
+        }
+    ],
     "projects": [
         {
             "title": "Projects",
